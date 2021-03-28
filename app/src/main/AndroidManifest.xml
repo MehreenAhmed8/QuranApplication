@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myproject.alquran">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alquran">
+        <activity android:name=".adapter.RamozEAuqafAdapter"></activity>
+        <activity android:name=".fragment.RamoozEoqaf" />
+        <activity android:name=".adapter.ParahAdapter" />
+        <activity android:name=".fragment.ParahFragment" />
+        <activity android:name=".adapter.SurahAdapter" />
+        <activity android:name=".fragment.Surah_fragment" />
+        <activity
+            android:name=".holder.QuranHolder"
+            android:label="@string/title_activity_quran_holder"
+            android:theme="@style/Theme.Alquran.NoActionBar" />
+        <activity android:name=".adapter.QuranAdapter" />
+        <activity
+            android:name=".LoadQuran"
+            android:label="@string/title_activity_load_quran"
+            android:theme="@style/Theme.Alquran.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
